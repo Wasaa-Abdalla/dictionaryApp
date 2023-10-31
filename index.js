@@ -3,6 +3,10 @@ const result = document.getElementById('result');
 const sound = document.getElementById('sound');
 const btn = document.getElementById('search-btn');
 
+document.addEventListener("DOMContentLoaded", function() {
+    alert('Welcome to The Digital Dictionary World!');
+});
+
 btn.addEventListener('click', ()=>{
     let inpWord= document.getElementById('inp-word').value;
     fetch(`${url}${inpWord}`)
